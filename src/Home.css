@@ -1,0 +1,34 @@
+.App{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+
+  }
+
+.ContainerOne{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: pink;
+}
+
+.Title{
+    margin: 150px 0px 0px 0px;  
+    font-size: 7em;
+    color: white;
+}
+
+.animated-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.6em;
+}
+
+.Work{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
