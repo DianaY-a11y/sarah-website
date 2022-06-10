@@ -1,10 +1,8 @@
 .App{
     display: flex;
-    justify-content: center;
     height: 100vh;
     width: 100vw;
     flex-direction: column;
-
   }
 
 .ContainerOne{
@@ -28,7 +26,89 @@
 }
 
 .Work{
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
+    display: flex;
+    color: rgb(163, 55, 73);
+    flex-direction: column;
     background-color: white;
+}
+
+.HorizontalWork{
+    display: flex;
+    justify-content: space-around;
+    height: 50%;
+    flex-direction: row;
+    margin: 30px 10px 10px 10px;
+}
+
+.Box1{
+    height: 100%;
+    width: 45%;
+    border-radius: 30px;
+    background-image: url("./assets/earth.png"); 
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: -6px 7px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Box2{
+    height: 100%;
+    width: 45%;
+    border-radius: 30px;
+    background-image: url("./assets/sister.png"); 
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: -6px 7px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Box3{
+    height: 100%;
+    width: 45%;
+    border-radius: 30px;
+    background-image: url("./assets/art.png"); 
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: -6px 7px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Box4{
+    height: 100%;
+    width: 45%;
+    border-radius: 30px;
+    background-image: url("./assets/student.png"); 
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: -6px 7px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Box5{
+    height: 100%;
+    width: 45%;
+    border-radius: 30px;
+    background-image: url("./assets/horse.png"); 
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: -6px 7px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Box6{
+    height: 100%;
+    width: 45%;
+    border-radius: 30px;
+    background-image: url("./assets/dance.png"); 
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: -6px 7px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Box1:hover, .Box2:hover, .Box3:hover, .Box4:hover, .Box5:hover, .Box6:hover{
+    cursor: pointer;
+    box-shadow: -6px 7px 4px rgba(0, 0, 0, 0.6);
 }

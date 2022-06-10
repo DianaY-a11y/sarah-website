@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import "./Home.css";
 import profile from "./assets/sarah.jpg";
+import "./Home.css";
 import Randomstrings from "./sentence";
+import { useNavigate } from "react-router-dom";
 
 const ProfileImage = styled.img`
   height: 30em;
-  width: 25em;
+  width: 23em;
   border-radius: 95px;
   margin: 30px 0px 0px 0px;
 
@@ -20,6 +21,7 @@ const ProfileImage = styled.img`
 // import styled from "styled-components";
 
 function Home() {
+  const navigate = useNavigate();
   return (
     <div>
       <div className="App">
@@ -32,7 +34,23 @@ function Home() {
           <ProfileImage src={profile} alt="Profile Picture" />
         </div>
         <div className="Work">
-          <h2>click on the pictures to learn more!</h2>
+          <h2>click on the pictures to learn more about me!</h2>
+          <div className="HorizontalWork">
+            <div
+              className="Box1"
+              onClick={() => window.open("https://www.bestforteeth.org/")}
+            />
+
+            <div className="Box2" onClick={() => navigate("/sister")}></div>
+          </div>
+          <div className="HorizontalWork">
+            <div className="Box3" />
+            <div className="Box4" />
+          </div>
+          <div className="HorizontalWork">
+            <div className="Box5" />
+            <div className="Box6" />
+          </div>
         </div>
       </div>
     </div>
